@@ -57,6 +57,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_name, 
                                              trust_remote_code=True, 
                                             #  device_map='auto'
+                                             cache_dir="D:/Developer/LLM/FuggingFace-cache-model",
                                              )
 
 # 创建pipeline
